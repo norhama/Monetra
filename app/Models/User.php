@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
+
 use App\Models\Product;
 use App\Models\Expense;
 use Database\Factories\UserFactory;
@@ -17,7 +17,7 @@ use Illuminate\Notifications\Notifiable;
 #[Hidden(['password', 'remember_token'])]
 class User extends Authenticatable
 {
-    /** @use HasFactory<UserFactory> */
+   
     use HasFactory, Notifiable;
 
     public function products(): HasMany

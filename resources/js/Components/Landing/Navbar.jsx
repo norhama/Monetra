@@ -19,12 +19,10 @@ export default function Navbar({ user }) {
 
     return (
         <>
-            {/* Fixed navbar */}
             <header className="fixed inset-x-0 top-0 z-50 w-full border-b border-violet-100/80 bg-white/95 shadow-sm backdrop-blur-xl">
                 <nav className="mx-auto flex w-full max-w-[1440px] items-center justify-between gap-6 px-6 py-5 sm:px-10 lg:px-16 xl:px-20">
                     <Brand />
 
-                    {/* Desktop navigation */}
                     <div className="hidden items-center gap-10 lg:flex xl:gap-14">
                         <a href="#about" className={navLinkClass}>
                             About
@@ -42,7 +40,6 @@ export default function Navbar({ user }) {
                         </a>
                     </div>
 
-                    {/* Desktop buttons */}
                     <div className="hidden items-center gap-4 lg:flex">
                         {user ? (
                             <Link
@@ -70,7 +67,6 @@ export default function Navbar({ user }) {
                         )}
                     </div>
 
-                    {/* Mobile menu button */}
                     <button
                         type="button"
                         onClick={() => setMenuOpen(!menuOpen)}
@@ -82,7 +78,6 @@ export default function Navbar({ user }) {
                     </button>
                 </nav>
 
-                {/* Mobile navigation */}
                 {menuOpen && (
                     <div className="border-t border-violet-100 bg-white px-6 py-6 lg:hidden">
                         <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-5 sm:px-4">
@@ -145,7 +140,6 @@ export default function Navbar({ user }) {
                 )}
             </header>
 
-            {/* Spacer so the page content won't hide behind the fixed navbar */}
             <div aria-hidden="true" className="h-[76px]" />
         </>
     );

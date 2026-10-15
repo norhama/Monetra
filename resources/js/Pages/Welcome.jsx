@@ -14,7 +14,7 @@ export default function Welcome() {
 
     return (
         <>
-            <Head title="Monetra - Your Money, Your Way" />
+            <Head title="Monetra" />
 
             <LandingStyles />
 

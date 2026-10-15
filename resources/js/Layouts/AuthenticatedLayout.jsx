@@ -184,7 +184,6 @@ export default function AuthenticatedLayout({ children, header }) {
                     />
                 )}
 
-                {/* Desktop sidebar */}
                 <aside
                     className={`fixed inset-y-0 left-0 z-30 hidden border-r border-violet-100 bg-white transition-[width] duration-300 md:block ${
                         sidebarOpen ? "w-64" : "w-20"
@@ -193,7 +192,6 @@ export default function AuthenticatedLayout({ children, header }) {
                     <SidebarContent />
                 </aside>
 
-                {/* Mobile sidebar */}
                 <aside
                     className={`fixed inset-y-0 left-0 z-50 w-72 border-r border-violet-100 bg-white shadow-xl transition-transform duration-300 md:hidden ${
                         mobileOpen
@@ -204,7 +202,6 @@ export default function AuthenticatedLayout({ children, header }) {
                     <SidebarContent mobile />
                 </aside>
 
-                {/* Page area */}
                 <div
                     className={`min-h-screen min-w-0 transition-[margin] duration-300 ${
                         sidebarOpen ? "md:ml-64" : "md:ml-20"
